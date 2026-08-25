@@ -7,3 +7,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## ASOHER project rules
+
+- Use Bun for package installation and scripts.
+- Follow `PRODUCT.md` and the ASOHER PRD for product and visual decisions.
+- Do not use real, stock, AI-generated, or patient photography in Phase 1.
+- Use `ImagePlaceholder` for every photographic space.
+- Preserve Source Sans 3, the ASOHER color tokens, mobile-first layout, and WCAG 2.2 AA practices.
