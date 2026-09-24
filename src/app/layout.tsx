@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Source_Sans_3 } from "next/font/google";
 
 import "./globals.css";
@@ -11,22 +11,25 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "ASOHER | Una comunidad que acompana",
-  description: "Asociacion de Hemofilia del Hospital Rebagliati.",
+  title: "ASOHER | Asociación de Hemofilia del Hospital Rebagliati",
+  description:
+    "Personas con hemofilia, familias y cuidadores del Hospital Rebagliati. Compartimos información clara, nos acompañamos y pedimos atención a tiempo.",
+  openGraph: {
+    title: "ASOHER | Nadie debería enfrentar la hemofilia solo",
+    description: "Asociación de Hemofilia del Hospital Rebagliati.",
+    locale: "es_PE",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fbf9f6",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="es" className={`${sourceSans.variable} h-full antialiased`}>
-      <body>
-        {/* THESIS: ASOHER convierte el hero en una puerta de entrada a una comunidad, no en una pagina medica generica. */}
-        {/* OWN-WORLD: blanco abierto, azul de confianza y rojo de acompanamiento con una grilla editorial amplia. */}
-        {/* STORY: la persona entiende que no esta sola y puede elegir entre pedir orientacion o conocer la organizacion. */}
-        {/* FIRST VIEWPORT: header sticky arriba; copia a la izquierda y placeholder humano 16:10 a la derecha. */}
-        {/* FORM: hero editorial de dos columnas, posicion 1; seed key: asoh-er-hero. */}
-        {/* FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance */}
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

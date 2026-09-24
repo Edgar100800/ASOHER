@@ -1,14 +1,7 @@
-import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import { Plus } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-
-const topics = [
-  { title: "Qué es", text: "Una explicación sencilla para comenzar." },
-  { title: "Cómo se vive", text: "Lo cotidiano también merece orientación." },
-  { title: "Dónde preguntar", text: "No tienes que resolverlo todo a solas." },
-];
+import { hemophiliaTopics } from "@/data/content";
 
 export function HemophiliaIntro() {
   return (
@@ -16,30 +9,26 @@ export function HemophiliaIntro() {
       <Container className="hemophilia-grid">
         <div className="hemophilia-copy">
           <h2 id="hemophilia-title" className="section-title">
-            Entender también es una forma de cuidarse.
+            La hemofilia, en pocas palabras.
           </h2>
           <p className="section-body">
-            La hemofilia puede traer preguntas en distintas etapas. Compartimos una primera guía para acercarte a la información con calma y encontrar el acompañamiento adecuado.
+            Es una condición con la que se nace. La sangre tarda más en coagular, así que un sangrado demora más en detenerse. No quiere decir que se sangre más rápido.
           </p>
-          <Link href="#recursos" className="text-link">
-            Explorar recursos
-            <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" />
-          </Link>
+          <p className="medical-note">
+            Esta es una introducción y la estamos revisando con profesionales de salud. No reemplaza una consulta médica.
+          </p>
         </div>
 
-        <div className="hemophilia-topics">
-          {topics.map((topic) => (
-            <article key={topic.title} className="topic-row">
-              <div>
-                <h3>{topic.title}</h3>
-                <p>{topic.text}</p>
-              </div>
-              <ArrowUpRight className="topic-row__arrow" size={19} strokeWidth={1.7} aria-hidden="true" />
-            </article>
+        <div className="topic-list">
+          {hemophiliaTopics.map((topic) => (
+            <details key={topic.title} className="topic">
+              <summary>
+                <span>{topic.title}</span>
+                <Plus className="topic__icon" size={20} strokeWidth={1.8} aria-hidden="true" />
+              </summary>
+              <p>{topic.text}</p>
+            </details>
           ))}
-          <div className="hemophilia-topics__image" aria-label="Espacio reservado para una imagen educativa">
-            <ImagePlaceholder label="Imagen educativa" ratio="16:9" variant="education" />
-          </div>
         </div>
       </Container>
     </section>

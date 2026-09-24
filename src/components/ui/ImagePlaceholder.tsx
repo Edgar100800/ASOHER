@@ -23,7 +23,6 @@ export function ImagePlaceholder({ label = "Foto", ratio = "16:10", variant = "h
   return (
     <div className={`image-placeholder ${ratioClass[ratio]} ${variantClass[variant]}`} aria-hidden="true">
       <span className="image-placeholder__label">{label}</span>
-      <span className="image-placeholder__ratio">{ratio}</span>
     </div>
   );
 }

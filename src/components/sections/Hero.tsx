@@ -1,37 +1,46 @@
+import Image from "next/image";
+import type { CSSProperties } from "react";
+
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { photos } from "@/data/photos";
 
 export function Hero() {
+  const photo = photos.charlaFarmacia;
+
   return (
     <section id="inicio" className="hero-section" aria-labelledby="hero-title">
       <Container className="hero-grid">
         <div className="hero-copy">
-          <h1 id="hero-title" className="hero-title">
-            Vivir con hemofilia no significa vivir con <span>límites.</span>
+          <h1 id="hero-title" className="hero-title enter" style={{ "--i": 0 } as CSSProperties}>
+            Nadie debería enfrentar la hemofilia <span>solo.</span>
           </h1>
-          <p className="hero-description">
-            Somos una comunidad que acompaña, orienta y conecta a personas con hemofilia y a sus familias en cada momento.
+          <p className="hero-description enter" style={{ "--i": 1 } as CSSProperties}>
+            Personas con hemofilia, familias y cuidadores del Hospital Rebagliati. Compartimos lo que sabemos y pedimos atención a tiempo.
           </p>
-          <div className="hero-actions">
-            <Button href="#nosotros">Soy paciente</Button>
+          <div className="hero-actions enter" style={{ "--i": 2 } as CSSProperties}>
+            <Button href="#contacto">Necesito orientación</Button>
             <Button href="#nosotros" variant="secondary">
               Conoce ASOHER
             </Button>
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="Espacio reservado para la fotografía principal">
-          <div className="hero-visual__meta">
-            <span>Primera mirada</span>
-            <span>Fase 1 / mockup</span>
-          </div>
+        <figure className="hero-visual">
           <div className="hero-visual__frame">
-            <ImagePlaceholder label="Foto hero" ratio="16:10" variant="human" />
-            <span className="hero-visual__stamp">Comunidad<br />que acompaña</span>
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              preload
+              placeholder="blur"
+              sizes="(min-width: 1024px) 55vw, 100vw"
+              className="hero-visual__image"
+            />
           </div>
-          <p className="hero-visual__caption">El espacio para una imagen humana, cercana y cotidiana.</p>
-        </div>
+          <figcaption className="photo-caption">
+            Charla «Conociendo la Hemofilia» con el equipo de Farmacia Hospitalaria.
+          </figcaption>
+        </figure>
       </Container>
     </section>
   );

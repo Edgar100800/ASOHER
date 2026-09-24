@@ -1,0 +1,473 @@
+# Transcripción: entrevista a Josef Alcarrás (colectivo Alto en Hemofilia)
+
+## Metadatos de la fuente
+
+- Formato: entrevista audiovisual publicada como reel de Facebook.
+- Duración: 19 minutos 21 segundos.
+- Enlace: <https://www.facebook.com/reel/533283499510000>
+- Participantes:
+  - Diego Gavidia: paciente con hemofilia A severa, comunicador de profesión y activista en la comunidad de hemofilia.
+  - Josef "Yoses" Alcarrás: paciente con hemofilia B, egresado de la UTP (Ingeniería Industrial), especialista en auditorías con más de 7 años de experiencia y miembro del colectivo Alto en Hemofilia.
+- Idioma original: español.
+- Método de trabajo: descarga del video con yt-dlp, extracción del audio con ffmpeg y transcripción automática local con Whisper (faster-whisper, modelo large-v3, GPU, septiembre de 2026).
+- Advertencia: la transcripción automática puede contener errores en nombres propios, instituciones y cantidades. El entrevistado aparece también como "Yoses" o "Yosef" en la transcripción automática. "Revaliati" corresponde a "Rebagliati". Estos detalles deben contrastarse con la grabación antes de publicarse.
+
+## Temas clave para la web
+
+Esta entrevista aporta material sobre la vida cotidiana con hemofilia, la autoinfusión, la comunidad y el acceso al tratamiento. Las cifras mencionadas son testimonios de la entrevista y no deben publicarse como estadísticas oficiales sin validación previa (ver criterios en `base-informativa.md`).
+
+### Qué es la hemofilia, en palabras de un paciente
+
+Josef la describe como una deficiencia que genera limitaciones en la vida diaria, pero sostiene que esas limitaciones pueden superarse y que la condición termina convirtiéndose en un estilo de vida: cómo se maneja la salud, el trabajo, la familia y las amistades.
+
+### Autoinfusión
+
+- Idealmente, los niños aprenderían a autoinfundirse el factor por vía intravenosa entre los 6 y 7 años de edad.
+- Ambos entrevistados aprendieron a los 13 años, tardíamente y sin entrenamiento formal: "nadie nos dijo que desde niños puedes intentar ponerte tu medicamento".
+- Describe el tema como un tabú familiar y relata el ritual de tensión que generaban los padres antes de cada inyección, lo que escondía las venas y aumentaba los fallos.
+- La terapia es principalmente domiciliaria: no requiere acudir al hospital a cada aplicación.
+- El colectivo organiza un taller de autoinfusión para el 23 de noviembre en la mañana (verificado en dos momentos de la entrevista). Nota: la hora exacta queda imprecisa en la transcripción ("como entre una y media de la mañana"); debe confirmarse con los organizadores.
+
+### Mitos que buscan desmontar
+
+- Que la hemofilia vuelve a la persona improductiva: que no puede estudiar, trabajar, tener amigos ni pareja.
+- Expectativas de vida falsas: a la familia de Josef le dijeron que viviría 5 o 6 años; a la de Diego, hasta los 12 o 13.
+- Asociaciones erróneas con el nombre: "amor a la sangre", vampiros, "te gustan los animales".
+
+### Ejercicio y vida saludable
+
+- La natación fortalece los músculos para que las articulaciones no sufran tanto al cargar el peso del cuerpo.
+- Mantener un peso adecuado reduce el dolor en rodillas, codos y tobillos y la cantidad de medicamento requerida.
+- El ejercicio aporta también beneficios psicológicos: concentración y desapego de preocupaciones.
+
+### Comunidad
+
+- Una de cada 10.000 personas tiene hemofilia (cifra mencionada en la entrevista; contrastar con fuente médica).
+- Conocer la comunidad (Asociación Peruana de Hemofilia, campamentos) permitió a Josef ver otras realidades y dejar de sentirse "el que nació mal": "si otros pueden, yo también puedo".
+- El colectivo Alto en Hemofilia nace de la necesidad de consejos entre pares; usa TikTok e Instagram como medio, no como fin. Primeros videos: alrededor de 40.000 y 20.000 vistas (dato de la entrevista, pendiente de verificar).
+- El fin es educar, generar actividades presenciales y contacto directo con las personas.
+
+### Acceso al tratamiento en el Perú
+
+- Contexto de recortes de dosis mencionado por ambos.
+- Según Josef, a los pacientes con hemofilia B atendidos en hospitales del MINSA no se les compra el medicamento; dependerían de donaciones. Dato pendiente de confirmación institucional.
+- Referencia comparada: en EE. UU. se mencionan esquemas de una inyección al mes (probablemente profilaxis de larga duración), frente a una aplicación cada dos días en el Perú. No presentar como comparación protocolar oficial.
+- Petición concreta: que el Estado presupueste la compra del medicamento para todos los hemofílicos y luego se avance a mejorar los esquemas.
+
+### Vivir plenamente frente a sobrevivir
+
+- Sobrevivir es aceptar la realidad y vivir lleno de sufrimiento; vivir es superar el dolor identificando los límites reales y siendo inteligente para superarlos.
+- Para ello se necesitan consejos y contacto con personas que vivieron experiencias similares.
+- Los activistas priorizan a los niños: diagnóstico temprano, buena consejería a los padres y acceso al medicamento cuando se necesita.
+
+## Transcripción completa (español)
+
+Transcripción automática con marcas de tiempo [minuto:segundo].
+
+- [00:04 -> 00:13] Buen día, soy Diego Gavidia, paciente con hemofilia A severa, comunicador de profesión y activista en la comunidad de hemofilia.
+- [00:13 -> 00:28] El día de hoy estamos con Josef Alcarrás, paciente con hemofilia B, egresado de la UTP, de la carrera de Ingeniería Industrial y especialista en auditorías con más de 7 años de experiencia.
+- [00:29 -> 00:32] Josef, gracias por venir el día de hoy y participar con nosotros.
+- [00:32 -> 00:44] Gracias por invitarme, de verdad que me da gusto poder estar contigo conversando y poder difundir sobre qué es la hemofilia, qué es el fin, al menos para mí, de todo esto.
+- [00:45 -> 00:56] Así es, es hacer visible nuestra condición. En tus palabras explícanos qué es la hemofilia para que los que nos están viendo puedan entenderlo.
+- [00:56 -> 01:00] La hemofilia yo lo veo como una deficiencia de todas formas.
+- [01:00 -> 01:02] Es algo que te genera limitaciones.
+- [01:02 -> 01:03] Limitaciones en tu vida.
+- [01:04 -> 01:08] Pero estas limitaciones finalmente tienen que ser superadas, ¿no?
+- [01:08 -> 01:10] Tienes que encontrar la forma de superarlas.
+- [01:10 -> 01:13] Al final también llega a ser un estilo de vida.
+- [01:13 -> 01:19] Cómo es que tú manejas tu salud, cómo es que tú manejas tu trabajo, tu familia, tus amigos.
+- [01:20 -> 01:25] Y a medida que va pasando el tiempo te das cuenta que tu vida es diferente a la de otros.
+- [01:25 -> 01:29] Entonces ahí es donde encaja con un estilo de vida diferente también, ¿no?
+- [01:30 -> 01:31] Cuéntanos.
+- [01:31 -> 01:32] ¿Cómo sucede?
+- [01:32 -> 01:35] ¿Cómo surge la iniciativa de formar el colectivo Alto en Hemofilia?
+- [01:37 -> 01:41] Surge por una necesidad que compartimos unos amigos y yo.
+- [01:41 -> 01:50] Y esta necesidad es que a veces tenemos dudas, preguntas sobre nuestra vida y quisiéramos consejos.
+- [01:50 -> 01:53] Y a veces no los encontramos. Muchas veces no los encontramos.
+- [01:53 -> 01:59] Entonces dijimos, seguramente sí como nosotros hay mucha gente que también tiene dudas.
+- [01:59 -> 02:00] ¿Sobre qué? Sobre la hemofilia, ¿no?
+- [02:01 -> 02:02] Principalmente personas.
+- [02:02 -> 02:03] Que tienen hemofilia.
+- [02:03 -> 02:08] Y no saben a quién preguntar, a quién consultar o con quién compartir sus experiencias.
+- [02:08 -> 02:14] Y entonces surge la idea de crear este grupo, este colectivo Alto en Hemofilia.
+- [02:14 -> 02:21] En el cual nosotros podamos compartir sobre nuestras vidas, dar a conocer qué es lo que hacemos, quiénes somos.
+- [02:22 -> 02:27] Y quizás por ahí encontrar personas que tengan dudas o que necesiten algún consejo que nosotros les podamos dar.
+- [02:27 -> 02:28] Y estar ahí para ellos.
+- [02:29 -> 02:31] Me parece excelente la educación.
+- [02:32 -> 02:38] Es fundamental en nuestro caso. Es decir, cómo resolver cada situación.
+- [02:39 -> 02:43] Y desde temas como la autoinfusión, la terapia física, etc.
+- [02:46 -> 02:51] Ustedes están en redes sociales. Es un colectivo enfocado a la difusión a través de redes.
+- [02:51 -> 02:55] Cuyo fin es básicamente el de educar.
+- [02:56 -> 02:58] ¿En qué redes los podemos encontrar?
+- [02:58 -> 03:01] Bueno, actualmente tenemos una cuenta en TikTok.
+- [03:02 -> 03:03] En Instagram.
+- [03:03 -> 03:08] También tratamos de difundir el tema de la hemofilia en nuestras redes personales.
+- [03:09 -> 03:09] Cada uno.
+- [03:11 -> 03:15] Pero en sí, nosotros vemos a las redes sociales como un medio.
+- [03:16 -> 03:21] Pero no es nuestro principal fin tener la presencia en redes sociales en realidad.
+- [03:21 -> 03:23] Que hasta el momento la vamos teniendo, creo.
+- [03:23 -> 03:29] Porque en los dos videos que hemos lanzado hemos tenido una cantidad considerable de visualizaciones.
+- [03:29 -> 03:32] ¿Cuántos views han tenido, por ejemplo, en estos videos?
+- [03:32 -> 03:35] En uno tenemos como 40.000 y en otro 20.000.
+- [03:35 -> 03:39] Y bueno, cada día van sumándose más vistas, más likes por ahí.
+- [03:39 -> 03:44] Pero como te comentaba, en realidad, tener la red social, que sí creemos que es muy importante,
+- [03:44 -> 03:46] por eso hemos empezado por ahí, no es el fin, ¿no?
+- [03:46 -> 03:50] Sino el fin es la difusión y no solamente por redes sociales,
+- [03:50 -> 03:55] sino también generando actividades en que podamos concentrar a las personas
+- [03:55 -> 03:59] y acercarnos ya a tener como que un contacto más directo con estas personas, ¿no?
+- [04:00 -> 04:01] Con respecto a la autoinfusión,
+- [04:02 -> 04:05] sabemos que es primordial para nosotros
+- [04:05 -> 04:11] e idealmente, pues, se trata de que los niños aprendan a autoinfundirse
+- [04:11 -> 04:15] el factor que se aplica por vía intravenosa
+- [04:15 -> 04:18] entre los 6 y 7 años de edad.
+- [04:19 -> 04:20] En mi caso fue a los 13.
+- [04:20 -> 04:25] Y aprendí porque, pues, la enfermera que me ponía no estaba disponible.
+- [04:25 -> 04:26] Yo aprendí un poco tarde.
+- [04:27 -> 04:29] En tu caso, ¿tú aprendiste a qué edad?
+- [04:29 -> 04:30] Yo también aprendí tarde.
+- [04:30 -> 04:31] ¡Ja, ja, ja!
+- [04:32 -> 04:35] Los miembros del colectivo Brian, Edward, también aprendieron tarde.
+- [04:36 -> 04:36] Todos aprendimos tarde.
+- [04:36 -> 04:37] ¿Por qué?
+- [04:37 -> 04:41] Porque nadie nos dijo que desde niños puedes intentar ponerte tu medicamento.
+- [04:42 -> 04:43] No, más bien como que era un tabú.
+- [04:44 -> 04:46] No, tú no te puedes poner tú mismo porque te vas a hacer daño.
+- [04:47 -> 04:50] Y ya llegando a la época de la adolescencia,
+- [04:50 -> 04:52] porque yo también lo aprendí a los 13 años,
+- [04:52 -> 04:55] es que me harté de que mis papás me pongan el medicamento ellos
+- [04:55 -> 04:58] porque también llega un momento en que los padres tienen que aprender a ponerte el medicamento
+- [04:58 -> 05:00] para no estar yendo al hospital a cada rato.
+- [05:01 -> 05:02] Pero me cansé de que mis padres me pongan...
+- [05:02 -> 05:06] Me pongan el medicamento porque ellos hacían todo un ritual para que me pongan la inyección.
+- [05:06 -> 05:11] Decían, apaguen la tele, apaguen la radio, boten al perro, no hagan bulla, no hagan nada.
+- [05:11 -> 05:13] Y me ponían más tenso.
+- [05:13 -> 05:14] Entonces un día me cansó.
+- [05:14 -> 05:17] Y cuando te pones tenso, las venas se te esconden.
+- [05:17 -> 05:18] Las venas desaparecen.
+- [05:19 -> 05:21] Y peor, fallas más de lo que deberías.
+- [05:21 -> 05:23] Entonces ya un día me cansó y...
+- [05:24 -> 05:27] Y dije, no, yo ya sé ponerme porque una enfermera me enseñó.
+- [05:27 -> 05:28] Lo cual era mentira.
+- [05:28 -> 05:30] A mí no me enseñaron.
+- [05:30 -> 05:30] No me dijeron, ¿sabes qué?
+- [05:30 -> 05:31] Haz esto, esto, esto.
+- [05:31 -> 05:31] No.
+- [05:32 -> 05:36] Simplemente de lo que yo me acordaba de cómo la enfermera lo hacía.
+- [05:36 -> 05:38] Y más o menos me hacía algunos comentarios.
+- [05:39 -> 05:42] Es que dije, no, ya me enseñaron, yo ya aprendí, me voy a poner solo.
+- [05:43 -> 05:46] Y mis padres me dijeron, bueno, si te sale, ya te pones solo.
+- [05:47 -> 05:51] Y yo con miedo de que me salga, que me salga la inyectada.
+- [05:51 -> 05:55] Porque si no me salía, yo sabía que nunca más me iban a dejar intentar ponerme el medicamento.
+- [05:55 -> 05:57] Porque mis papás sí eran muy sobreprotectores.
+- [05:58 -> 06:00] De hecho, es común que tener papás sobreprotectores.
+- [06:00 -> 06:02] Sí, verdad, muy común, muy común.
+- [06:02 -> 06:03] Cuando tenemos hemofilia.
+- [06:03 -> 06:05] Sí, cansa a veces, sí.
+- [06:05 -> 06:10] La cosa es que, bueno, me crucé los dedos y he ido rezando internamente.
+- [06:11 -> 06:12] Cuando era creyente todavía.
+- [06:13 -> 06:16] Y me puse la inyección y salió, salió.
+- [06:16 -> 06:16] Y desde entonces me puse.
+- [06:16 -> 06:18] Y le atinaste.
+- [06:18 -> 06:20] Pero algunas veces ha fallado.
+- [06:20 -> 06:21] Muchas veces.
+- [06:21 -> 06:28] Claro, yo también, o sea, ya ahora por la práctica, pues, sé también en qué parte del brazo ponerme, etc.
+- [06:28 -> 06:31] Pero ha sido un proceso de aprendizaje.
+- [06:32 -> 06:36] Y que es similar a otros procesos de aprendizaje.
+- [06:36 -> 06:44] Es decir, por ejemplo, en tu caso, haces natación, lo cual es ideal para nosotros.
+- [06:45 -> 06:52] ¿Cuánto te ha ayudado esto y cuánto te ayuda a mantener un estilo de vida activo para tu estado de salud en general?
+- [06:52 -> 06:54] De salud mental y física.
+- [06:54 -> 06:55] Me ayuda bastante.
+- [06:56 -> 06:56] ¿Bastante por qué?
+- [06:56 -> 07:02] Porque se necesita fortalecer los músculos para que las articulaciones no sufran tanto.
+- [07:03 -> 07:04] No sufran tanto en qué?
+- [07:04 -> 07:05] En cargar tu peso.
+- [07:05 -> 07:07] Y yo que estoy un poco gordito, sí.
+- [07:07 -> 07:08] Me ayuda bastante.
+- [07:08 -> 07:10] Porque si no, mis rodillas me duelen.
+- [07:10 -> 07:11] Me duele la rodilla, el codo, el tobillo.
+- [07:12 -> 07:13] Hay que mantener un peso adecuado.
+- [07:14 -> 07:20] Porque si no, uno requiere más medicina y también las articulaciones sufren más.
+- [07:20 -> 07:21] Sí, literal.
+- [07:21 -> 07:25] Pero también me ayuda por la parte psicológica, te cuento.
+- [07:25 -> 07:32] Porque cuando estoy nadando, solamente me concentro en respirar brazo, pierna, respirar brazo, pierna.
+- [07:32 -> 07:33] Y me olvido de todo lo demás.
+- [07:33 -> 07:38] ¿Qué mitos desde alto en hemofilia buscan aclarar o desmitificar?
+- [07:38 -> 07:42] ¿Qué te ha pasado que malentiendan sobre hemofilia en general?
+- [07:43 -> 07:48] Bueno, principalmente que la hemofilia te vuelve una persona improductiva.
+- [07:49 -> 07:55] O te genera tantas limitaciones que no puedes estudiar, no puedes trabajar, no puedes tener amigos, pareja, etc.
+- [07:55 -> 08:03] Y las principales o las primeras personas que ponen ese estereotipo sobre ti, al menos en mi caso, fue mi familia.
+- [08:03 -> 08:06] Porque no es que me veían como que con cólera, no, ah, no va a ser nada.
+- [08:06 -> 08:09] Sino como, yo sentía que me veían como que con lástima.
+- [08:09 -> 08:10] Como que, uy, pobrecito.
+- [08:10 -> 08:11] Con compasión, ¿no?
+- [08:11 -> 08:11] Con compasión.
+- [08:13 -> 08:14] Lástima, lástima y compasión.
+- [08:15 -> 08:19] Este, pobrecito, que estudie, a ver, que haga algo tranquilo.
+- [08:19 -> 08:20] A ver qué le sale.
+- [08:20 -> 08:21] A ver qué sale, ajá.
+- [08:22 -> 08:25] A mis padres les dijeron de que, los médicos, ¿ah?
+- [08:25 -> 08:29] En mi hospital les dijeron que solamente iba a vivir como que hasta los 12 años, 13 años.
+- [08:30 -> 08:33] En mi caso, a mi mamá le dijeron que yo iba a vivir 5, 6 años.
+- [08:33 -> 08:36] Y que solo iba a poder ver televisión, todo el día.
+- [08:36 -> 08:38] Creo que entonces es porque no había internet.
+- [08:38 -> 08:41] Entonces, no investigaba a los médicos tanto.
+- [08:41 -> 08:42] En este caso sería jugar, jugar.
+- [08:43 -> 08:43] No, de verdad.
+- [08:43 -> 08:45] No sé de dónde sacaban información los médicos, ¿no?
+- [08:45 -> 08:46] No sé.
+- [08:46 -> 08:47] Eso le dijeron a mis padres.
+- [08:47 -> 08:52] Y mis padres, como que, crecí yo escuchándolos.
+- [08:53 -> 08:56] A mi mamá, principalmente, conversar con mi abuela a escondidas.
+- [08:56 -> 08:58] Ya a Joseph le quedan dos años de vida, ¿no?
+- [08:58 -> 09:00] Le quedó un año, contando los años para llegar hasta los 12.
+- [09:01 -> 09:03] Pasaron los 12, viví ya toda una fiesta.
+- [09:03 -> 09:03] Y ya está, ¿no?
+- [09:03 -> 09:06] Porque eso es este...
+- [09:06 -> 09:13] Pero luego también está el otro tema de qué vas a estudiar, a qué te vas a dedicar, en qué vas a trabajar.
+- [09:13 -> 09:22] Y a mí me ayudó poder ver el ejemplo de otros hemofílicos que se envolvían en su vida, ¿no?
+- [09:23 -> 09:25] Porque al inicio me sentía solo.
+- [09:25 -> 09:29] Como que cuando tenía 12, 13, 14, no conocía a otros hemofílicos.
+- [09:29 -> 09:33] Y yo sentía que era el que tenía mala suerte y nació mal.
+- [09:33 -> 09:37] Y luego conocí, te conocí a ti, Diego, hace tiempo, a ti, a otras personas con hemofilia.
+- [09:37 -> 09:39] Sí, a los campamentos también.
+- [09:39 -> 09:40] A los campamentos y todo.
+- [09:40 -> 09:43] Entonces, a mí me permitió ver otras realidades.
+- [09:43 -> 09:46] Y que de verdad, teniendo hemofilia, se podía vivir bien.
+- [09:46 -> 09:48] Sí, se podía vivir bien.
+- [09:48 -> 09:50] Y eso también me motivó a mí para no rendirme, ¿no?
+- [09:50 -> 09:53] Y como para decir, ah, ya, si otros pueden, yo también puedo.
+- [09:53 -> 09:57] Entonces, eso me ayudó a mí a tener una motivación para estudiar, para trabajar.
+- [09:58 -> 10:03] Actualmente, como comentas, llevo yo 8 años en el rubro de la auditoría en cumplimiento.
+- [10:03 -> 10:08] Estoy ocupando un cargo gerencial y me está yendo muy bien en la parte profesional.
+- [10:08 -> 10:10] De noche me dedico a hacer mis videos en TikTok.
+- [10:11 -> 10:14] Yo realmente a veces me pregunto, ¿a qué hora duerme este chico?
+- [10:14 -> 10:22] Porque estás full chamba todo el día y después te veo conectado, editando, publicando.
+- [10:23 -> 10:27] E incluso nos estás apoyando en nuestras actividades.
+- [10:27 -> 10:28] Me dieron permiso en el trabajo.
+- [10:28 -> 10:31] Yendo hasta el Revaliati, cuando has podido.
+- [10:31 -> 10:33] Pero súper comprometido con la comunicación.
+- [10:33 -> 10:34] Esa es la comunidad, ¿no? Ese es el tema.
+- [10:35 -> 10:42] Hablando de comunidad, ¿qué tan importante para una deficiencia rara como la nuestra,
+- [10:42 -> 10:46] es decir, solo uno de cada 10.000 personas tienen hemofilia,
+- [10:47 -> 10:50] ¿qué tan importante es generar comunidad?
+- [10:52 -> 10:57] Creo que es una de las cosas más importantes que deberían haber.
+- [10:57 -> 11:00] ¿Por qué? Porque desde la experiencia que acabo de contar,
+- [11:00 -> 11:03] si no hubiera conocido a la comunidad de hemofílicos,
+- [11:04 -> 11:10] 12, 13, seguramente hubiera crecido deprimido, triste, solo, pensando que no tenía futuro.
+- [11:10 -> 11:15] Pero el conocer la comunidad en ese entonces, la Asociación Peruana de Hemofilia,
+- [11:15 -> 11:22] el conocerlos, a mí me permitió ver que existía todo un mundo del cual yo podía ser parte, ¿no?
+- [11:22 -> 11:24] Y que no estaba necesariamente excluido.
+- [11:25 -> 11:26] Y eso es importante.
+- [11:26 -> 11:30] Si yo no los hubiera conocido, quizás no hubiera estudiado, no hubiera trabajado,
+- [11:30 -> 11:33] no me hubiera planteado metas que veía que otros podían lograr.
+- [11:33 -> 11:34] De verdad que no.
+- [11:34 -> 11:39] De verdad que también te agradezco a ti, porque si tú no hubieras hecho muchas cosas en tu vida,
+- [11:39 -> 11:44] de repente yo no hubiera visto ese ejemplo para lograr X cosas.
+- [11:44 -> 11:45] Gracias.
+- [11:45 -> 11:52] Siempre comparto contigo el hecho de que generar comunidad, en nuestro caso, es fundamental
+- [11:52 -> 11:59] por el hecho educativo, por la inspiración que puedes tener en los demás.
+- [11:59 -> 12:04] Y, claro, ya anteriormente me comentaste que...
+- [12:04 -> 12:17] Sí, ya venimos organizando un taller que va a estar enfocado en la autoinfusión, ¿no?
+- [12:17 -> 12:21] Aprender a inyectarse uno mismo, inyectarse qué, la medicina que nos ponemos cada dos días.
+- [12:22 -> 12:30] Entonces, nosotros también tuvimos muchos percances con el cómo aprendimos a ponernos el medicamento, ¿no?
+- [12:30 -> 12:32] A veces, o muchas veces de estas creo que fueron como que...
+- [12:34 -> 12:36] Bueno, lo voy a intentar y a la de Dios, a ver qué sale.
+- [12:36 -> 12:37] Y lo hicimos.
+- [12:38 -> 12:42] Pero cuando lo intentamos, estuvimos llenos de miedo, llenos de temor, con angustia.
+- [12:42 -> 12:44] O uno falla también.
+- [12:44 -> 12:45] Fallas un montón.
+- [12:45 -> 12:46] Un montón de veces, sí.
+- [12:46 -> 12:47] Un montón de veces las fallas.
+- [12:47 -> 12:49] Hasta encontrar la vena, ¿no?
+- [12:49 -> 12:49] Sí.
+- [12:49 -> 12:58] Entonces, es bastante complicado y quisiéramos también ser como que la ayuda que otros necesitan para aprender a hacerlo, ¿no?
+- [12:58 -> 13:03] Por eso es que estamos organizando un taller que se va a realizar el 23 de noviembre en la mañana.
+- [13:04 -> 13:12] Y, bueno, la idea es invitar a todas las personas que tengan la necesidad de, de repente, de aprender a ponerse estas inyecciones uno mismo, ¿no?
+- [13:12 -> 13:16] La idea es autoinyectarse, no inyectar a otros, sino aprender a inyectarse uno mismo.
+- [13:17 -> 13:26] Y, bueno, ese día queremos compartir, conocer a otras personas y ver realmente cuántas personas están interesadas en sumarse a nuestra agrupación.
+- [13:26 -> 13:28] Pero sumarse cómo.
+- [13:28 -> 13:32] Simplemente compartiendo la información que nosotros brindamos.
+- [13:34 -> 13:39] Tratamos de difundir, porque el fin es que más personas sepan que es la hemofilia, ¿no?
+- [13:39 -> 13:44] Y que no se vea como lo que se ve hasta ahora, que es una enfermedad rara, una enfermedad que, uy, no conozco.
+- [13:44 -> 13:46] Y a veces lo asocian con otras cosas.
+- [13:46 -> 13:50] A veces yo digo, tengo hemofilia y me dicen, ah, tienes hemofilia, te gustan los animales.
+- [13:50 -> 13:51] Y yo, ¿qué?
+- [13:51 -> 13:54] No, de verdad que lo relacionan con cosas que nada que ver.
+- [13:54 -> 13:55] O por el nombre, ¿no?
+- [13:55 -> 13:56] Amor a la sangre.
+- [13:56 -> 13:58] Amor a la sangre, que eres vampiro.
+- [13:58 -> 14:00] O sea, lo relacionan con cosas así bien random, sí, sí.
+- [14:00 -> 14:03] Sí, definitivamente hay que aclarar eso.
+- [14:04 -> 14:05] Esos conceptos.
+- [14:06 -> 14:09] Pero que a veces depende cómo uno lo tome, ¿no?
+- [14:09 -> 14:12] Puede ser algo cómico, a veces puede afectarte.
+- [14:13 -> 14:16] Pero siempre ser resiliente y saber cómo manejar las situaciones.
+- [14:18 -> 14:23] ¿Cómo ves el futuro del tratamiento en el Perú?
+- [14:23 -> 14:29] Ahora que estamos pasando por una situación un poco difícil de recortes de dosis.
+- [14:31 -> 14:33] ¿Cómo ves el tema futuro?
+- [14:34 -> 14:35] ¿Qué te gustaría que sea?
+- [14:37 -> 14:43] Bueno, en el caso de nuestro medicamento, actualmente vivimos una realidad complicada.
+- [14:43 -> 14:44] ¿Qué realidad?
+- [14:44 -> 14:49] La realidad en que hay muchos pacientes hospitales como que pertenecen al MinSA,
+- [14:50 -> 14:52] a los cuales no se les compra el medicamento.
+- [14:52 -> 14:58] Por ejemplo, yo tengo hemofilia tipo B, que es la hemofilia como que un poco más rara, ¿no?
+- [14:58 -> 15:02] Entre lo raro, un poco más raro, la hemofilia B.
+- [15:03 -> 15:04] De lo raro, normal es la A.
+- [15:04 -> 15:05] ¿Te tocó cero?
+- [15:05 -> 15:06] Súper exclusivo, sí.
+- [15:07 -> 15:12] Ya, y de este grupo de los del B, los hospitales del MinSA no les compran el medicamento.
+- [15:12 -> 15:13] Ellos viven solo de donaciones.
+- [15:14 -> 15:21] Entonces, hay muchos pacientes, hay una gran población que no recibe la medicación que debería, ¿no?
+- [15:22 -> 15:26] Digamos que actualmente como que es lo básico, tener el factor y aplicarnos la medicina,
+- [15:26 -> 15:28] pero ellos ni siquiera tienen eso básico.
+- [15:28 -> 15:33] Espero de verdad que al menos en unos años, al menos unos 4 o 5 años yo creo que ya puede ser.
+- [15:33 -> 15:35] Vamos a lograrlo.
+- [15:35 -> 15:36] Tenemos que lograrlo, sí.
+- [15:36 -> 15:43] Tenemos que lograr presionar por todos lados para que el Estado presupueste la compra del medicamento para todos los hemofílicos, ¿no?
+- [15:43 -> 15:45] Que actualmente no se está dando.
+- [15:45 -> 15:49] Y ya luego de eso seguramente se verá el tema de mejorar el tratamiento, ¿no?
+- [15:50 -> 15:52] Porque también hay muchas mejoras en el tratamiento.
+- [15:53 -> 15:55] Por ejemplo, yo conozco tu caso, ¿no?
+- [15:55 -> 16:02] Que estuviste viviendo en Estados Unidos y tenían un tratamiento mucho mejor en el que se aplicaban solo una inyección al mes y vivían bien.
+- [16:02 -> 16:03] En cambio acá yo me aplico.
+- [16:03 -> 16:05] Aplico mi inyección cada dos días, ¿no?
+- [16:05 -> 16:08] Entonces es una gran diferencia entre sufrimiento y dolor, sí.
+- [16:08 -> 16:14] Sí, realmente fue un cambio en mi caso, un cambio exponencial en la calidad de vida.
+- [16:15 -> 16:20] Básicamente el tratamiento es la piedra angular y hay muchos otros aspectos que ayudan,
+- [16:20 -> 16:30] pero es fundamental para mantener una, para alcanzar nuestras metas, para desarrollarnos y tener una vida digna, pero no solo digna, plena.
+- [16:31 -> 16:32] ¿Cuál es la diferencia para ti entre…?
+- [16:33 -> 16:37] Básicamente vivir plenamente y solo sobrevivir.
+- [16:38 -> 16:50] Claro, yo creo que en el caso de el sobrevivir, pues uno simplemente acepta su realidad y vive lleno de sufrimiento y ya.
+- [16:50 -> 16:56] Pero para poder vivir hay que superar el sufrimiento, hay que superar el dolor.
+- [16:56 -> 17:01] Hay que aceptarlo y hay que encontrar maneras de poder saltarlo, ¿no?
+- [17:02 -> 17:03] O canalizarlo.
+- [17:03 -> 17:03] Canalizarlo.
+- [17:03 -> 17:06] O encontrar la vía de seguir, la forma de seguir adelante.
+- [17:07 -> 17:12] Si no identificamos cuáles son los límites que realmente nos obstaculizan, nunca los vamos a poder superar.
+- [17:12 -> 17:20] Siempre vamos a querer fingir que no pasa nada y seguir adelante y nos vamos a estrellar contra un tráiler que nos va a atropellar y nos va a doler mucho.
+- [17:21 -> 17:28] Entonces yo creo que la idea es que uno debe identificar cuáles son esos obstáculos, esos límites y ser inteligente para poder superarlos.
+- [17:29 -> 17:31] Y para eso uno necesita muchos consejos.
+- [17:31 -> 17:33] Necesita tener contacto con otras personas.
+- [17:33 -> 17:41] Personas que de repente son mayores que tú o que han vivido cosas similares a las que tú vives o que vas a vivir y aprender de sus experiencias, ¿no?
+- [17:41 -> 17:43] Por eso es que también es importante el tema de la comunidad.
+- [17:44 -> 17:44] Por supuesto.
+- [17:45 -> 17:50] Sobre todo, y nosotros que somos activistas, nos preocupamos por los niños, ¿no?
+- [17:51 -> 18:00] Que ellos no pasen por lo que nosotros ya hemos pasado en mayor o menor medida, pero que tengan un diagnóstico temprano.
+- [18:00 -> 18:02] Que los padres tengan buena consejería.
+- [18:03 -> 18:06] Que los niños tengan la medicina cuando la necesitan.
+- [18:07 -> 18:10] Y hay muchas necesidades todavía no resueltas a nivel nacional.
+- [18:11 -> 18:16] Definitivamente vamos a seguir avanzando, trabajando con las autoridades para que el tratamiento mejore.
+- [18:17 -> 18:19] Te agradezco, Yoses, por tu participación.
+- [18:19 -> 18:24] Realmente es súper inspirador lo que nos has contado.
+- [18:24 -> 18:28] Y cuenta con nosotros para las actividades que Alto en Hemofilia realice.
+- [18:29 -> 18:29] Muchas gracias.
+- [18:30 -> 18:32] Gracias a todos también por la invitación.
+- [18:32 -> 18:33] Cuentan con Alto para la Hemofilia.
+- [18:33 -> 18:34] Para lo que sea.
+- [18:35 -> 18:44] Y los invitamos también a todos los que estén escuchando o viendo el podcast a participar en este taller que va a ser realizado el 23 de noviembre.
+- [18:44 -> 18:47] Seguramente ya estaremos compartiendo por ahí más información sobre el lugar.
+- [18:48 -> 18:50] La hora va a ser en la mañana, de hecho, como entre una y media de la mañana.
+- [18:51 -> 18:55] Y pues es para todos los que estén interesados en aprender a autoinyectarse.
+- [18:55 -> 19:01] Que creo que es como que para los hemofílicos al menos lo primero que debemos saber para sentirnos independientes.
+- [19:01 -> 19:03] Para sentir que no dependemos de...
+- [19:03 -> 19:04] De otras personas.
+- [19:05 -> 19:06] Que podemos hacer las cosas solos.
+- [19:06 -> 19:10] Sí, porque la terapia es principalmente domiciliaria.
+- [19:10 -> 19:11] Es en el hogar.
+- [19:11 -> 19:16] Entonces, uno no requiere realmente estar yendo al hospital a cada rato.
+- [19:16 -> 19:17] Muchas gracias, Yosef.
+- [19:17 -> 19:18] Cuenta con nosotros.
+- [19:18 -> 19:19] Vamos a estar ahí presentes.
+- [19:20 -> 19:20] Gracias.
+
+## English translation
+
+Automatic transcription translated to English. Timestamps refer to the original audio. Names and figures must be verified against the recording before publication.
+
+- [00:04 -> 00:13] Good day, I'm Diego Gavidia, a patient with severe hemophilia A, a communicator by profession and an activist in the hemophilia community.
+- [00:13 -> 00:28] Today we are with Josef Alcarrás, a patient with hemophilia B, a graduate of UTP in Industrial Engineering and an audit specialist with more than 7 years of experience.
+- [00:29 -> 00:32] Josef, thank you for coming today and taking part with us.
+- [00:32 -> 00:44] Thank you for inviting me. I'm really glad to be here talking with you and spreading the word about what hemophilia is and, at least for me, what the purpose of all this is.
+- [00:45 -> 00:56] That's right — it's about making our condition visible. In your own words, explain what hemophilia is so those watching can understand it.
+- [00:56 -> 01:00] I see hemophilia as a deficiency, in any case.
+- [01:00 -> 01:03] It's something that creates limitations — limitations in your life.
+- [01:04 -> 01:10] But these limitations ultimately have to be overcome, right? You have to find a way to overcome them.
+- [01:10 -> 01:19] In the end it also becomes a lifestyle: how you manage your health, your work, your family, your friends.
+- [01:20 -> 01:29] And as time goes by you realize your life is different from other people's. So that's where it fits a different lifestyle too, right?
+- [01:30 -> 01:35] Tell us — how did the initiative to form the collective Alto en Hemofilia come about?
+- [01:37 -> 01:53] It arose from a need that some friends and I shared: sometimes we have doubts, questions about our lives, and we'd like advice. And sometimes we can't find it. Many times we can't find it.
+- [01:53 -> 02:08] So we said: surely, just like us, there are many people who also have doubts. About what? About hemophilia. Mainly people who have hemophilia and don't know who to ask, who to consult, or who to share their experiences with.
+- [02:08 -> 02:28] And then the idea came up to create this group, this collective Alto en Hemofilia, where we can share about our lives, make known what we do, who we are. And maybe find people who have doubts or need some advice we could give. And be there for them.
+- [02:29 -> 02:43] I think that's excellent — education. It's fundamental in our case. That is, how to handle each situation, from topics like self-infusion, physical therapy, etc.
+- [02:46 -> 02:58] You're on social media. It's a collective focused on outreach through social media, whose purpose is basically education. On which platforms can we find you?
+- [02:58 -> 03:09] Well, we currently have a TikTok account and an Instagram account. We also try to spread the word about hemophilia through our personal accounts, each of us.
+- [03:11 -> 03:29] But really, we see social media as a means — having a social media presence isn't our main goal, although we've been building one, I think. Because the two videos we've released have had a considerable number of views.
+- [03:29 -> 03:39] How many views, for example? Around 40,000 on one and 20,000 on the other. And more views and likes keep adding up every day.
+- [03:39 -> 03:59] But as I was saying, having the social media — which we do think is very important, that's why we started there — isn't the goal. The goal is outreach, not only through social media, but also by organizing activities where we can bring people together and get closer to direct contact with these people.
+- [04:00 -> 04:18] Regarding self-infusion: we know it's essential for us. Ideally, the idea is for children to learn to self-infuse the factor, which is given intravenously, between 6 and 7 years of age.
+- [04:19 -> 04:26] In my case it was at 13. And I learned because the nurse who did it wasn't available. I learned a bit late.
+- [04:27 -> 04:30] In your case, at what age did you learn? I learned late too. (laughter)
+- [04:32 -> 04:46] The members of the collective — Brian, Edward — also learned late. We all learned late. Why? Because nobody told us that from childhood you can try to give yourself your medication. It was more like a taboo: "No, you can't do it yourself, you'll hurt yourself."
+- [04:47 -> 05:00] Then, reaching adolescence — I also learned at 13 — I got tired of my parents giving me the medication, because there comes a point when the parents have to learn to give it to you so you're not going to the hospital all the time.
+- [05:01 -> 05:13] But I got tired of my parents giving it to me, because they made a whole ritual out of the injection. They'd say: turn off the TV, turn off the radio, put the dog out, don't make noise. And that made me more tense.
+- [05:13 -> 05:23] Then one day I'd had enough. When you get tense, your veins hide. The veins disappear. And worse, you miss more than you should.
+- [05:24 -> 05:31] So one day I said: no, I already know how to do it, a nurse taught me — which was a lie. Nobody taught me. They didn't tell me, "Do this, this and this." No.
+- [05:32 -> 05:46] I just remembered how the nurse did it, plus a few comments she'd made. So I said: they've already taught me, I'll do it myself. And my parents said: well, if it works, you can do it yourself from now on.
+- [05:47 -> 05:57] And I was afraid of missing the vein. Because if I missed, I knew they'd never let me try again, because my parents were very overprotective.
+- [05:58 -> 06:03] Actually, it's common to have overprotective parents when you have hemophilia. Yes, very common. It gets tiring sometimes, yes.
+- [06:05 -> 06:16] Anyway, I crossed my fingers and prayed silently (when I was still a believer). And I gave myself the injection and it worked. And from then on I did it myself.
+- [06:16 -> 06:21] And you nailed it. But sometimes it has failed. Many times.
+- [06:21 -> 06:36] Of course. Now, with practice, I also know which part of the arm to use, etc. But it's been a learning process — similar to other learning processes.
+- [06:36 -> 06:54] For example, in your case, you swim, which is ideal for us. How much has that helped you maintain an active lifestyle for your overall health — mental and physical?
+- [06:54 -> 07:02] It helps me a lot. Why? Because you need to strengthen your muscles so the joints don't suffer so much.
+- [07:03 -> 07:13] Suffer so much from what? From carrying your weight. And since I'm a bit chubby, yes, it helps me a lot. Because otherwise my knee, my elbow, my ankle hurt.
+- [07:12 -> 07:20] You have to maintain an adequate weight, because otherwise you need more medication and the joints suffer more.
+- [07:21 -> 07:33] Literally. But it also helps me psychologically, I'll tell you. When I'm swimming, I only concentrate on breathing — arm, leg — breathe, arm, leg. And I forget everything else.
+- [07:33 -> 07:42] What myths does Alto en Hemofilia seek to clarify or debunk? What misunderstandings have you experienced about hemophilia in general?
+- [07:43 -> 07:55] Well, mainly that hemophilia makes you an unproductive person. Or that it creates so many limitations that you can't study, can't work, can't have friends, a partner, etc.
+- [07:55 -> 08:11] And the first people who put that stereotype on you, at least in my case, was my family. It's not that they were angry — I felt they saw me with pity. Like "oh, poor thing." With compassion.
+- [08:13 -> 08:21] Pity and compassion. "Poor thing — let him study, let him do something quiet, let's see how that turns out."
+- [08:22 -> 08:29] The doctors at my hospital told my parents that I was only going to live to about 12 or 13 years old.
+- [08:30 -> 08:36] In my case, they told my mother I would live 5 or 6 years, and that I would only be able to watch television all day.
+- [08:36 -> 08:42] I guess that's because there was no internet then, so I didn't research the doctors that much. In that case it would be playing, all day.
+- [08:43 -> 08:52] No, seriously. I don't know where the doctors got their information. That's what they told my parents. And my parents — I grew up listening to them.
+- [08:53 -> 09:03] To my mother especially, talking secretly with my grandmother: "Josef has two years left to live, right?" "One year left" — counting the years until I turned 12. I turned 12, and I've lived — well, a whole celebration.
+- [09:06 -> 09:22] But then there's the other issue: what are you going to study, what are you going to do, where are you going to work. It helped me to see the example of other people with hemophilia who were engaged in their lives.
+- [09:23 -> 09:33] Because at the beginning I felt alone. When I was 12, 13, 14, I didn't know other people with hemophilia, and I felt I was the unlucky one, the one who was born wrong.
+- [09:33 -> 09:40] And then I met you, Diego, a while back, and other people with hemophilia. Yes, at the camps too.
+- [09:40 -> 09:57] That allowed me to see other realities — and that truly, with hemophilia, you could live well. And that motivated me not to give up — to say: if others can, so can I. That helped me have motivation to study, to work.
+- [09:58 -> 10:10] Currently, as you mention, I've been in auditing and compliance for 8 years. I hold a managerial position and I'm doing very well professionally. At night I devote myself to making my TikTok videos.
+- [10:11 -> 10:28] I sometimes wonder: when does this guy sleep? Because you're working hard all day and then I see you online, editing, posting. And you even support us in our activities. I got time off at work.
+- [10:28 -> 10:34] Going all the way to Rebagliati when you've been able to. But super committed to communication. That's community, right? That's the thing.
+- [10:35 -> 10:50] Speaking of community — for a rare deficiency like ours, that is, only one in 10,000 people has hemophilia — how important is it to build community?
+- [10:52 -> 11:10] I think it's one of the most important things there should be. Why? From the experience I just told: if I hadn't met the hemophilia community at 12, 13, I probably would have grown up depressed, sad, alone, thinking I had no future.
+- [11:10 -> 11:34] But getting to know the community back then — the Peruvian Hemophilia Association — allowed me to see that there was a whole world I could be part of, and that I wasn't necessarily excluded. If I hadn't met them, maybe I wouldn't have studied, wouldn't have worked, wouldn't have set goals I saw others could achieve. Truly.
+- [11:34 -> 11:45] And I truly thank you too, because if you hadn't done many things in your life, maybe I wouldn't have seen that example to achieve certain things. Thank you.
+- [11:45 -> 11:59] I always share with you the idea that building community, in our case, is fundamental — for the educational aspect, for the inspiration you can find in others.
+- [11:59 -> 12:21] And, of course, you mentioned before that... Yes, we've been organizing a workshop focused on self-infusion, right? Learning to inject yourself — the medicine we take every two days.
+- [12:22 -> 12:49] So, we also had many mishaps with how we learned to give ourselves the medication. Many times it was like: "Well, I'll try it and let God decide, we'll see what happens." And we did it. But when we tried, we were full of fear, full of dread, with anxiety. And you also miss. You miss a lot. A lot of times.
+- [12:47 -> 12:58] Until you find the vein, right? Yes. So it's quite complicated, and we'd like to be the help others need to learn how to do it.
+- [12:58 -> 13:16] That's why we're organizing a workshop on November 23rd in the morning. The idea is to invite everyone who needs to learn to give themselves these injections on their own. The idea is self-infusion — not injecting others, but learning to inject yourself.
+- [13:17 -> 13:32] And that day we want to share, meet other people, and see how many people are interested in joining our group. Joining how? Simply by sharing the information we provide.
+- [13:34 -> 13:55] We try to spread it, because the goal is for more people to know what hemophilia is — and for it not to be seen as it is now: a rare disease you go "uh, I don't know." And sometimes they associate it with other things. Sometimes I say "I have hemophilia" and they say: "Ah, you like animals?" And I'm like: what?
+- [13:51 -> 14:00] No, seriously, they relate it to things that have nothing to do with it. Or because of the name, right? "Love of blood." "Love of blood" — like you're a vampire. Such random things.
+- [14:00 -> 14:16] Definitely, that has to be clarified. Those concepts. But sometimes it depends on how you take it — it can be funny, or it can affect you. But always be resilient and know how to handle situations.
+- [14:18 -> 14:35] How do you see the future of treatment in Peru, now that we're going through a somewhat difficult situation of dose cuts? How do you see the future? What would you like it to be?
+- [14:37 -> 14:52] Well, regarding our medication, we currently live a complicated reality. What reality? The reality that there are many patients in hospitals belonging to MINSA (the Ministry of Health) for whom the medication is not purchased.
+- [14:52 -> 15:06] For example, I have hemophilia type B, which is the somewhat rarer hemophilia. Of the rare ones, the common one is A. "You got the exclusive one." Super exclusive, yes.
+- [15:07 -> 15:28] Right, and of this group of those with B, MINSA hospitals don't buy the medication for them. They live only on donations. So there are many patients — a large population — who don't receive the medication they should. Right now the basics are having the factor and applying the medicine, but they don't even have that basic.
+- [15:28 -> 15:49] I truly hope that in a few years — I think in about 4 or 5 years it could be. We're going to make it. We have to make it. We have to push from every side for the State to budget the purchase of medication for all people with hemophilia — which currently isn't happening. And after that, surely the matter of improving treatment will come.
+- [15:50 -> 16:08] Because there are many improvements in treatment. For example, I know your case — you lived in the United States and they had much better treatment, where they only got one injection a month and lived well. Whereas here I apply my injection every two days. So it's a big difference between suffering and pain.
+- [16:08 -> 16:30] Yes, it really was a change in my case — an exponential change in quality of life. Basically, treatment is the cornerstone, and there are many other aspects that help, but it's fundamental for reaching our goals, for developing ourselves and having a dignified life — but not just dignified, a full life.
+- [16:31 -> 16:37] What's the difference for you between...? Basically living fully and just surviving.
+- [16:38 -> 17:06] Right, I think in the case of surviving, you simply accept your reality and live full of suffering, and that's it. But to be able to live you have to overcome the suffering, overcome the pain. You have to accept it and find ways to leap over it. Or channel it. Or find the way to keep going, to move forward.
+- [17:07 -> 17:28] If we don't identify which limits are truly obstructing us, we'll never be able to overcome them. We'll always want to pretend nothing is happening and push ahead, and we'll crash into a truck that will run us over and hurt a lot.
+- [17:21 -> 17:43] So I think the idea is that you must identify those obstacles, those limits, and be smart enough to overcome them. And for that you need a lot of advice. You need contact with other people — people who are perhaps older than you, or who have lived through things similar to what you live or will live — and learn from their experiences.
+- [17:41 -> 17:44] That's why the community is also important. Of course.
+- [17:45 -> 18:16] Above all — we who are activists worry about the children, right? That they don't go through what we've already been through to a greater or lesser extent — that they get an early diagnosis. That parents get good counseling. That children have the medicine when they need it. And there are many needs still unresolved at the national level. We'll definitely keep moving forward, working with the authorities so treatment improves.
+- [18:17 -> 18:28] Thank you, Josef, for your participation. What you've told us is really super inspiring. And count on us for the activities Alto en Hemofilia carries out.
+- [18:29 -> 18:34] Thank you very much. Thank you all as well for the invitation. Count on Alto para la Hemofilia. For whatever you need.
+- [18:35 -> 18:55] And we also invite everyone listening to or watching this podcast to take part in this workshop to be held on November 23rd. We'll surely be sharing more information about the venue on social media. It will be in the morning, actually — around 1:30 in the morning [as stated in the recording; likely a slip of the tongue or mistranscription]. And it's for everyone interested in learning to self-infuse.
+- [18:55 -> 19:06] Which I think, for people with hemophilia at least, is the first thing we should know in order to feel independent. To feel we don't depend on other people. That we can do things on our own.
+- [19:06 -> 19:16] Yes, because therapy is mainly home-based. It's at home. So you don't really need to keep going to the hospital all the time.
+- [19:16 -> 19:20] Thank you very much, Josef. Count on us. We'll be there. Thank you.

@@ -12,6 +12,6 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - Use Bun for package installation and scripts.
 - Follow `PRODUCT.md` and the ASOHER PRD for product and visual decisions.
-- Do not use real, stock, AI-generated, or patient photography in Phase 1.
-- Use `ImagePlaceholder` for every photographic space.
+- Use the real photos from `images/` for photographic spaces (see `images/README.md` for names and descriptions).
+- Use `ImagePlaceholder` only when no suitable image exists in `images/`.
 - Preserve Source Sans 3, the ASOHER color tokens, mobile-first layout, and WCAG 2.2 AA practices.

@@ -1,48 +1,44 @@
-import { ArrowUpRight, Check } from "lucide-react";
+import Image from "next/image";
 
 import { Container } from "@/components/layout/Container";
-import { Button } from "@/components/ui/Button";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
-
-const commitments = [
-  "Escuchamos antes de orientar.",
-  "Compartimos información clara y responsable.",
-  "Celebramos cada avance, grande o pequeño.",
-];
+import { Reveal } from "@/components/motion/Reveal";
+import { commitments } from "@/data/content";
+import { photos } from "@/data/photos";
 
 export function Community() {
+  const photo = photos.charlaAuditorio;
+
   return (
     <section id="nosotros" className="community-section" aria-labelledby="community-title">
       <Container className="community-grid">
-        <div className="community-visual" aria-label="Espacio reservado para una fotografía de la comunidad">
-          <div className="community-visual__line" aria-hidden="true" />
-          <ImagePlaceholder label="Foto de comunidad" ratio="4:3" variant="human" />
-          <div className="community-visual__note">
-            <span>Estamos cerca</span>
-            <ArrowUpRight size={20} strokeWidth={1.7} aria-hidden="true" />
-          </div>
-        </div>
+        <Reveal className="community-visual">
+          <figure>
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              placeholder="blur"
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="community-visual__image"
+            />
+            <figcaption className="photo-caption">Diego Gavidia, presidente de ASOHER, en una charla abierta a pacientes y familias.</figcaption>
+          </figure>
+        </Reveal>
 
         <div className="community-copy">
           <h2 id="community-title" className="section-title">
-            Cuando nos encontramos, el camino se siente distinto.
+            Una comunidad que conoce la hemofilia de cerca.
           </h2>
           <p className="section-body">
-            ASOHER nace para acompañar a quienes viven con hemofilia y a las personas que caminan a su lado. Aquí puedes preguntar, compartir experiencias y sentirte parte de una red que entiende.
+            ASOHER reúne a personas que viven con hemofilia, a sus familias y a quienes las cuidan en el Hospital Rebagliati. Casi todos llegamos con las mismas preguntas y aquí las respondemos juntos, sin reemplazar al equipo médico.
           </p>
-          <ul className="commitment-list">
-            {commitments.map((commitment) => (
-              <li key={commitment}>
-                <span className="commitment-list__icon" aria-hidden="true">
-                  <Check size={15} strokeWidth={2.2} />
-                </span>
-                <span>{commitment}</span>
-              </li>
+          <ul className="commitment-grid">
+            {commitments.map((item, index) => (
+              <Reveal key={item.title} as="li" delay={index * 0.05}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </Reveal>
             ))}
           </ul>
-          <Button href="#recursos" variant="secondary">
-            Ver cómo participar
-          </Button>
         </div>
       </Container>
     </section>

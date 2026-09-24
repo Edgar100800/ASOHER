@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="212 12 554 666" role="img" aria-labelledby="asoher-mark-title">
+<title id="asoher-mark-title">ASOHER</title>
+<defs>
+<clipPath id="asoher-ring-back"><rect x="0" y="0" width="960" height="572"/></clipPath>
+<clipPath id="asoher-ring-front"><rect x="0" y="0" width="960" height="300"/></clipPath>
+<clipPath id="asoher-well"><circle cx="490" cy="470" r="155"/></clipPath>
+</defs>
+<g clip-path="url(#asoher-ring-back)"><circle cx="489" cy="390" r="254" fill="none" stroke="#3968B3" stroke-width="22"/></g>
+<path fill="#B52E28" d="M490 22C546.2 134.2 639.9 272.0 677.3 342.5A217 217 0 1 1 302.7 342.5C340.1 272.0 433.8 134.2 490 22Z"/>
+<path fill="#A3291F" d="M490 98C538.6 190.7 619.6 304.6 652.1 362.8A190 190 0 1 1 327.9 362.8C360.4 304.6 441.4 190.7 490 98Z"/>
+<path fill="#92231E" d="M490 178C530.4 248.7 597.8 335.7 624.8 380.1A162 162 0 1 1 355.2 380.1C382.2 335.7 449.6 248.7 490 178Z"/>
+<g clip-path="url(#asoher-ring-front)"><circle cx="489" cy="390" r="254" fill="none" stroke="#3968B3" stroke-width="22"/></g>
+<g clip-path="url(#asoher-well)" fill="#FFFFFF" stroke="#B52E28" stroke-width="9">
+<ellipse cx="393" cy="588" rx="66" ry="84"/>
+<ellipse cx="587" cy="588" rx="66" ry="84"/>
+<ellipse cx="490" cy="600" rx="92" ry="98"/>
+</g>
+<g fill="#FFFFFF" stroke="#B52E28" stroke-width="7">
+<circle cx="396" cy="450" r="40"/><circle cx="584" cy="450" r="40"/><circle cx="490" cy="435" r="56"/>
+</g>
+</svg>

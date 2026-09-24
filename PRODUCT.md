@@ -6,7 +6,7 @@ Landing page de la Asociación de Hemofilia del Hospital Rebagliati.
 
 ## Fase actual
 
-Mockup funcional de una sola pagina. El objetivo es validar estructura, jerarquia, ritmo, color, tipografia, CTAs y responsive antes de incorporar contenido real.
+Landing de una sola página con contenido real de `docs/base-informativa.md`, fotos de actividades de ASOHER y entrevistas publicadas en Facebook.
 
 ## Audiencia
 
@@ -18,12 +18,19 @@ ASOHER es una comunidad que acompaña a las personas que viven con hemofilia. La
 
 ## Restricciones
 
-- No utilizar fotografias reales, stock, imagenes generadas por IA ni imagenes de pacientes en Fase 1.
-- Representar toda fotografia con `ImagePlaceholder` y bloques de color solido.
-- Usar Source Sans 3, la paleta ASOHER y datos mock claramente marcados.
+- Usar las fotos reales de `images/` (ver `images/README.md`) para todo lo que muestre actividades, personas o hechos de ASOHER. No usar stock.
+- Las ilustraciones generadas con IA solo van en espacios de navegación (por ejemplo, las tarjetas de "¿Por dónde quieres empezar?"), con estilo ilustrado y no fotorrealista, para que nadie las confunda con fotos de pacientes reales.
+- Usar `ImagePlaceholder` solo cuando ninguna foto de `images/` encaje.
+- Usar Source Sans 3 y la paleta ASOHER.
+- Toda cifra se atribuye a su fuente y, mientras no esté validada, se indica como pendiente de validación.
+- El texto no promete resultados médicos ni reemplaza la atención médica.
 - Mantener la experiencia mobile-first y accesible conforme a WCAG 2.2 AA.
 - No implementar CMS, backend, formularios conectados, analytics ni contenido medico definitivo.
 
-## Primera superficie
+## Voz
 
-La primera implementacion cubre Header y Hero en `/`. El hero debe comunicar en segundos que ASOHER acompana a personas con hemofilia y ofrecer las acciones `Soy paciente` y `Conoce ASOHER`.
+Cercana, concreta y honesta. Hablamos de "personas que viven con hemofilia", tuteamos, y preferimos hechos de ASOHER (reuniones, charlas, cifras con fuente) a frases genéricas de ONG. Sin guiones largos.
+
+## Superficie actual
+
+`/` con Header, Hero, Caminos, Nosotros, La realidad (encuesta), Nuestra voz (incidencia), Entrevistas, Hemofilia, Actividades, Contacto y Footer. Acciones del hero: `Necesito orientación` y `Conoce ASOHER`.

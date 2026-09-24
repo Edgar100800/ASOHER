@@ -1,0 +1,476 @@
+% ASOHER - Estandar de color digital
+% Compilar con: tectonic paleta-asoher.tex
+\documentclass[10pt]{article}
+
+\usepackage[a4paper, top=14mm, bottom=16mm, left=16mm, right=16mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{hidelinks}
+
+% Colores de marca
+\definecolor{asohPrimary}{HTML}{B52E28}
+\definecolor{asohPrimaryDark}{HTML}{92231E}
+\definecolor{asohSecondary}{HTML}{3968B3}
+\definecolor{asohSecondaryDark}{HTML}{274A85}
+
+% Texto y superficies
+\definecolor{asohText}{HTML}{20242B}
+\definecolor{asohTextSecondary}{HTML}{5B616B}
+\definecolor{asohCanvas}{HTML}{FBF9F6}
+\definecolor{asohSurface}{HTML}{FFFFFF}
+\definecolor{asohSurfaceSoft}{HTML}{F3F0EA}
+\definecolor{asohBorderWarm}{HTML}{DDD8D0}
+\definecolor{asohInkWarm}{HTML}{756F67}
+
+% Fondos de apoyo
+\definecolor{asohRedSoft}{HTML}{F8ECEB}
+\definecolor{asohBlueSoft}{HTML}{EDF2FA}
+
+\pagecolor{asohCanvas}
+\color{asohText}
+\RaggedRight
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\tabcolsep}{5pt}
+\raggedbottom
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\scriptsize\color{asohInkWarm}ASOHER / Estándar de color digital / v1.0}
+\fancyfoot[R]{\scriptsize\color{asohInkWarm}\thepage}
+
+\newcommand{\brandmark}{%
+  \begin{tikzpicture}[baseline=-2.5pt]
+    \node[fill=asohPrimary, text=white, minimum size=7.5mm, inner sep=0pt,
+      font=\scriptsize\bfseries] {AH};
+  \end{tikzpicture}%
+}
+
+\newcommand{\sectiontitle}[2]{%
+  \vspace{3pt}
+  {\fontsize{18}{21}\selectfont\bfseries\color{asohSecondaryDark}#1}\hfill
+  {\small\color{asohInkWarm}#2}\par
+  \vspace{3pt}{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{8pt}
+}
+
+\newcommand{\colorcard}[5]{% color, name, hex, role, foreground
+  \begin{minipage}[t]{0.31\textwidth}
+    \begin{tcolorbox}[colback=#1, colframe=asohBorderWarm, boxrule=0.45pt,
+      sharp corners, height=24mm, nobeforeafter, valign=center]
+      {\centering\large\bfseries\color{#5}Aa\par}
+    \end{tcolorbox}\par\vspace{3pt}
+    {\small\bfseries\color{asohSecondaryDark}#2}\par
+    {\footnotesize\color{asohInkWarm}#3}\par
+    {\scriptsize\color{asohTextSecondary}#4}
+  \end{minipage}%
+}
+
+\newcommand{\miniswatch}[4]{% color, name, hex, foreground
+  \begin{minipage}[t]{0.235\textwidth}
+    \begin{tcolorbox}[colback=#1, colframe=asohBorderWarm, boxrule=0.45pt,
+      sharp corners, height=16mm, nobeforeafter, valign=center, halign=center]
+      {\small\bfseries\color{#4}Aa}
+    \end{tcolorbox}\par\vspace{3pt}
+    {\small\bfseries\color{asohSecondaryDark}#2}\par
+    {\footnotesize\color{asohInkWarm}#3}
+  \end{minipage}%
+}
+
+\newcommand{\ratio}[1]{%
+  \tikz[baseline=-2pt]{\node[fill=asohBlueSoft, text=asohSecondaryDark,
+    inner xsep=4pt, inner ysep=2pt, font=\scriptsize\bfseries] {#1};}%
+}
+
+\newcommand{\yesmark}{%
+  \tikz[baseline=-2pt]{\node[circle, fill=asohBlueSoft, text=asohSecondaryDark,
+    minimum size=5mm, inner sep=0pt, font=\scriptsize\bfseries] {+};}%
+}
+
+\newcommand{\nomark}{%
+  \tikz[baseline=-2pt]{\node[circle, fill=asohRedSoft, text=asohPrimaryDark,
+    minimum size=5mm, inner sep=0pt, font=\scriptsize\bfseries] {-};}%
+}
+
+\begin{document}
+
+% =============================================================================
+% PAGE 1 - COVER, SCOPE, PRINCIPLES
+% =============================================================================
+\begin{minipage}[c]{0.66\linewidth}
+  \brandmark\hspace{7pt}{\large\bfseries\color{asohSecondaryDark}ASOHER}
+\end{minipage}%
+\begin{minipage}[c]{0.34\linewidth}\raggedleft
+  {\footnotesize\bfseries\color{asohPrimary}IDENTIDAD VISUAL}\par
+  {\scriptsize\color{asohInkWarm}Estándar para productos digitales}
+\end{minipage}
+
+\vspace{18pt}
+{\fontsize{32}{35}\selectfont\bfseries\color{asohSecondaryDark}
+Color con propósito.\linebreak Claridad con calidez.\par}
+\vspace{8pt}
+{\fontsize{14}{20}\selectfont\color{asohTextSecondary}
+Esta guía define cómo usar la paleta ASOHER para construir identidad, orientar la interacción y mantener una experiencia accesible, humana y consistente.\par}
+
+\vspace{15pt}
+\begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.55pt,
+  sharp corners, left=7mm, right=7mm, top=6mm, bottom=6mm]
+  \begin{minipage}[t]{0.45\linewidth}
+    {\small\bfseries\color{asohPrimary}ALCANCE}\par\vspace{4pt}
+    {\small\color{asohText}Este estándar se aplica a:}
+    \begin{itemize}[leftmargin=5mm, itemsep=2pt, topsep=3pt]
+      \item[\color{asohPrimary}$\bullet$] \small Sitio web de ASOHER.
+      \item[\color{asohPrimary}$\bullet$] \small Componentes y estados digitales.
+      \item[\color{asohPrimary}$\bullet$] \small Materiales informativos en pantalla.
+      \item[\color{asohPrimary}$\bullet$] \small Futuras superficies de la asociación.
+    \end{itemize}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.47\linewidth}
+    {\small\bfseries\color{asohSecondaryDark}OBJETIVO}\par\vspace{4pt}
+    {\small\color{asohTextSecondary}
+      El color debe ayudar a reconocer ASOHER, encontrar acciones, distinguir niveles de información y leer con comodidad. Nunca debe ser un adorno sin función.}
+  \end{minipage}
+\end{tcolorbox}
+
+\sectiontitle{Mapa del sistema}{Una función estable para cada familia}
+
+\begin{tcolorbox}[colback=asohSecondaryDark, colframe=asohSecondaryDark, boxrule=0pt,
+  sharp corners, left=7mm, right=7mm, top=5mm, bottom=5mm]
+  {\small\bfseries\color{white}Azul oscuro}\hfill
+  {\small\color{white}Estructura, títulos y confianza}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=asohPrimary, colframe=asohPrimary, boxrule=0pt,
+  sharp corners, left=7mm, right=7mm, top=5mm, bottom=5mm]
+  {\small\bfseries\color{white}Rojo ASOHER}\hfill
+  {\small\color{white}Acción principal y cercanía}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=asohSurfaceSoft, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=7mm, right=7mm, top=5mm, bottom=5mm]
+  {\small\bfseries\color{asohSecondaryDark}Neutrales cálidos}\hfill
+  {\small\color{asohTextSecondary}Lectura, superficies y ritmo}
+\end{tcolorbox}
+
+\sectiontitle{Principios de uso}{La jerarquía manda}
+
+\begin{minipage}[t]{0.31\linewidth}
+  {\small\bfseries\color{asohSecondaryDark}Identidad}\par\vspace{2pt}
+  {\scriptsize\color{asohTextSecondary}Repetir roles, no colores al azar. La consistencia hace reconocible a ASOHER.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}
+  {\small\bfseries\color{asohSecondaryDark}Orientación}\par\vspace{2pt}
+  {\scriptsize\color{asohTextSecondary}La acción principal debe encontrarse rápido. El rojo conserva esa prioridad.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}
+  {\small\bfseries\color{asohSecondaryDark}Accesibilidad}\par\vspace{2pt}
+  {\scriptsize\color{asohTextSecondary}El significado también se comunica con texto, posición, forma o iconografía.}
+\end{minipage}
+
+\newpage
+
+% =============================================================================
+% PAGE 2 - BRAND COLORS
+% =============================================================================
+{\fontsize{24}{27}\selectfont\bfseries\color{asohSecondaryDark}Colores de marca}\par
+\vspace{4pt}
+{\small\color{asohTextSecondary}El azul establece confianza y estructura. El rojo concentra la acción y la dimensión humana. Ambos se usan con intención y no compiten entre sí.}\par
+\vspace{7pt}{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{10pt}
+
+\sectiontitle{Familia azul}{Confianza, información y orientación}
+
+\colorcard{asohSecondaryDark}{Azul estructura}{\#274A85}{Títulos, navegación, fondos de alto contraste.}{white}\hfill
+\colorcard{asohSecondary}{Azul interacción}{\#3968B3}{Enlaces, foco, selección y acciones secundarias.}{white}\hfill
+\colorcard{asohBlueSoft}{Azul suave}{\#EDF2FA}{Fondos informativos y estados seleccionados.}{asohSecondaryDark}
+
+\vspace{12pt}
+\begin{minipage}[t]{0.48\linewidth}
+  {\small\bfseries\color{asohSecondaryDark}Usar azul oscuro para}\par
+  \begin{itemize}[leftmargin=5mm, itemsep=2pt, topsep=3pt]
+    \item[\color{asohSecondary}$\bullet$] \small Títulos y navegación principal.
+    \item[\color{asohSecondary}$\bullet$] \small Bloques que requieren autoridad visual.
+    \item[\color{asohSecondary}$\bullet$] \small Texto sobre fondos azul suave.
+  \end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  {\small\bfseries\color{asohSecondaryDark}Usar azul medio para}\par
+  \begin{itemize}[leftmargin=5mm, itemsep=2pt, topsep=3pt]
+    \item[\color{asohSecondary}$\bullet$] \small Enlaces y controles secundarios.
+    \item[\color{asohSecondary}$\bullet$] \small Anillos de foco visibles.
+    \item[\color{asohSecondary}$\bullet$] \small Indicadores de selección o avance.
+  \end{itemize}
+\end{minipage}
+
+\sectiontitle{Familia roja}{Acción, cercanía y énfasis}
+
+\colorcard{asohPrimary}{Rojo acción}{\#B52E28}{CTA principal, enlaces prioritarios y marca.}{white}\hfill
+\colorcard{asohPrimaryDark}{Rojo profundo}{\#92231E}{Hover, pressed y texto sobre rojo suave.}{white}\hfill
+\colorcard{asohRedSoft}{Rojo suave}{\#F8ECEB}{Fondos humanos, énfasis y apoyo visual.}{asohPrimaryDark}
+
+\vspace{12pt}
+\begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=6mm, right=6mm, top=5mm, bottom=5mm]
+  {\small\bfseries\color{asohPrimary}Regla de prioridad}\par\vspace{2pt}
+  {\small\color{asohText}
+  El rojo identifica la acción principal. Si todos los botones, enlaces, íconos y decoraciones son rojos, ninguna acción conserva prioridad.}
+\end{tcolorbox}
+
+\sectiontitle{Dosificación orientativa}{Predominio neutral, acento escaso}
+
+\begin{tikzpicture}
+  \fill[asohCanvas, draw=asohBorderWarm] (0,0) rectangle (11.4,1.15);
+  \fill[asohSurfaceSoft] (11.4,0) rectangle (14.7,1.15);
+  \fill[asohSecondaryDark] (14.7,0) rectangle (16.9,1.15);
+  \fill[asohPrimary] (16.9,0) rectangle (17.75,1.15);
+\end{tikzpicture}
+\vspace{3pt}
+{\scriptsize\color{asohTextSecondary}
+Lienzo y superficies dominan \hfill Bandas suaves apoyan \hfill Azul estructura \hfill \textcolor{asohPrimary}{Rojo dirige}}
+
+\newpage
+
+% =============================================================================
+% PAGE 3 - NEUTRALS AND LIGHT COLORS
+% =============================================================================
+{\fontsize{24}{27}\selectfont\bfseries\color{asohSecondaryDark}Neutrales y colores claros}\par
+\vspace{4pt}
+{\small\color{asohTextSecondary}Los neutrales cálidos reducen la sensación clínica del blanco puro y permiten que tarjetas, controles y contenido formen una jerarquía legible.}\par
+\vspace{7pt}{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{10pt}
+
+\sectiontitle{Texto}{Legibilidad antes que decoración}
+
+\colorcard{asohText}{Texto principal}{\#20242B}{Párrafos, datos y contenido de alta prioridad.}{white}\hfill
+\colorcard{asohTextSecondary}{Texto secundario}{\#5B616B}{Descripciones, metadatos y ayuda.}{white}\hfill
+\colorcard{asohSecondaryDark}{Título de marca}{\#274A85}{Encabezados y navegación.}{white}
+
+\sectiontitle{Jerarquía de superficies}{El blanco ya no es el fondo universal}
+
+\miniswatch{asohCanvas}{Lienzo}{\#FBF9F6}{asohText}\hfill
+\miniswatch{asohSurface}{Superficie}{\#FFFFFF}{asohText}\hfill
+\miniswatch{asohSurfaceSoft}{Banda suave}{\#F3F0EA}{asohText}\hfill
+\miniswatch{asohBorderWarm}{Borde cálido}{\#DDD8D0}{asohText}
+
+\vspace{12pt}
+\begin{tcolorbox}[colback=asohCanvas, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=7mm, right=7mm, top=6mm, bottom=6mm]
+  {\small\bfseries\color{asohSecondaryDark}Lienzo / \#FBF9F6}\par
+  {\small\color{asohTextSecondary}Fondo general, hero y secciones de lectura. Es el estado dominante.}\par
+  \vspace{5pt}
+  \begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.45pt,
+    sharp corners, left=5mm, right=5mm, top=4mm, bottom=4mm]
+    {\small\bfseries\color{asohSecondaryDark}Superficie / \#FFFFFF}\par
+    {\scriptsize\color{asohTextSecondary}Tarjetas, header y controles que deben elevarse del lienzo.}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{8pt}
+\begin{tcolorbox}[colback=asohSurfaceSoft, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=7mm, right=7mm, top=6mm, bottom=6mm]
+  {\small\bfseries\color{asohSecondaryDark}Banda suave / \#F3F0EA}\par
+  {\small\color{asohTextSecondary}Agrupa una idea completa o cambia el ritmo entre secciones. No debe alternarse por rutina.}
+\end{tcolorbox}
+
+\sectiontitle{Fondos de apoyo}{El tono refuerza el significado}
+
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohRedSoft, colframe=asohRedSoft, boxrule=0pt,
+    sharp corners, height=40mm, left=5mm, right=5mm, top=5mm]
+    {\small\bfseries\color{asohPrimaryDark}Rojo suave / \#F8ECEB}\par\vspace{3pt}
+    {\scriptsize\color{asohText}Usar para historias humanas, énfasis asociado a la marca y estados vinculados al rojo.}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohBlueSoft, colframe=asohBlueSoft, boxrule=0pt,
+    sharp corners, height=40mm, left=5mm, right=5mm, top=5mm]
+    {\small\bfseries\color{asohSecondaryDark}Azul suave / \#EDF2FA}\par\vspace{3pt}
+    {\scriptsize\color{asohText}Usar para orientación, contenido educativo, selección y bloques informativos.}
+  \end{tcolorbox}
+\end{minipage}
+
+\newpage
+
+% =============================================================================
+% PAGE 4 - ACCESSIBILITY
+% =============================================================================
+{\fontsize{24}{27}\selectfont\bfseries\color{asohSecondaryDark}Contraste y accesibilidad}\par
+\vspace{4pt}
+{\small\color{asohTextSecondary}ASOHER adopta WCAG 2.2 AA como mínimo: 4.5:1 para texto normal y 3:1 para texto grande, controles, íconos y foco.}\par
+\vspace{7pt}{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{10pt}
+
+\sectiontitle{Combinaciones aprobadas}{Ratios calculados sobre valores hex exactos}
+
+\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l l c >{\raggedright\arraybackslash}X@{}}
+\color{asohSecondaryDark}Combinación & \color{asohSecondaryDark}Muestra & \color{asohSecondaryDark}Ratio & \color{asohSecondaryDark}Uso \\
+\midrule
+Texto / lienzo & \colorbox{asohCanvas}{\textcolor{asohText}{Aa}} & \ratio{14.82:1} & Cuerpo y contenido extenso \\
+Texto secundario / lienzo & \colorbox{asohCanvas}{\textcolor{asohTextSecondary}{Aa}} & \ratio{5.93:1} & Descripciones y metadatos \\
+Azul oscuro / lienzo & \colorbox{asohCanvas}{\textcolor{asohSecondaryDark}{Aa}} & \ratio{8.31:1} & Títulos y navegación \\
+Rojo / lienzo & \colorbox{asohCanvas}{\textcolor{asohPrimary}{Aa}} & \ratio{5.90:1} & Enlaces y acentos \\
+Blanco / rojo & \colorbox{asohPrimary}{\textcolor{white}{Aa}} & \ratio{6.20:1} & Botón principal \\
+Blanco / azul medio & \colorbox{asohSecondary}{\textcolor{white}{Aa}} & \ratio{5.52:1} & Control secundario \\
+Azul oscuro / azul suave & \colorbox{asohBlueSoft}{\textcolor{asohSecondaryDark}{Aa}} & \ratio{7.77:1} & Información y selección \\
+Rojo profundo / rojo suave & \colorbox{asohRedSoft}{\textcolor{asohPrimaryDark}{Aa}} & \ratio{7.33:1} & Énfasis y estados rojos \\
+\end{tabularx}
+
+\sectiontitle{Ejemplos de combinación}{El fondo y el contenido forman una unidad}
+
+\begin{minipage}[t]{0.31\linewidth}
+  \begin{tcolorbox}[colback=asohSecondaryDark, colframe=asohSecondaryDark, boxrule=0pt,
+    sharp corners, height=38mm, valign=center, halign=center]
+    {\large\bfseries\color{white}Aa}\par
+    {\scriptsize\color{white}Blanco sobre azul oscuro}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}
+  \begin{tcolorbox}[colback=asohPrimary, colframe=asohPrimary, boxrule=0pt,
+    sharp corners, height=38mm, valign=center, halign=center]
+    {\large\bfseries\color{white}Aa}\par
+    {\scriptsize\color{white}Blanco sobre rojo}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\linewidth}
+  \begin{tcolorbox}[colback=asohBlueSoft, colframe=asohBlueSoft, boxrule=0pt,
+    sharp corners, height=38mm, valign=center, halign=center]
+    {\large\bfseries\color{asohSecondaryDark}Aa}\par
+    {\scriptsize\color{asohSecondaryDark}Azul oscuro sobre azul suave}
+  \end{tcolorbox}
+\end{minipage}
+
+\sectiontitle{El color nunca actúa solo}{Añadir una segunda señal}
+
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.45pt,
+    sharp corners, left=5mm, right=5mm, top=5mm, bottom=5mm]
+    {\yesmark\hspace{4pt}\small\bfseries\color{asohSecondaryDark}Correcto}\par\vspace{4pt}
+    {\small\bfseries\color{asohPrimaryDark}Campo obligatorio}\par
+    {\scriptsize\color{asohTextSecondary}El texto y el indicador visual comunican el estado.}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohSurface, colframe=asohPrimary, boxrule=0.7pt,
+    sharp corners, left=5mm, right=5mm, top=5mm, bottom=5mm]
+    {\nomark\hspace{4pt}\small\bfseries\color{asohPrimaryDark}Evitar}\par\vspace{4pt}
+    {\small\color{asohText}Un borde rojo sin texto}\par
+    {\scriptsize\color{asohTextSecondary}El significado depende únicamente del color.}
+  \end{tcolorbox}
+\end{minipage}
+
+\vspace{10pt}
+\begin{tcolorbox}[colback=asohSurfaceSoft, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=6mm, right=6mm, top=5mm, bottom=5mm]
+  {\small\bfseries\color{asohSecondaryDark}Revisión obligatoria}\par\vspace{2pt}
+  {\small\color{asohText}Validar contraste en estados hover, focus, pressed y disabled; probar zoom al 200\%; y verificar que ninguna instrucción dependa solo del color.}
+\end{tcolorbox}
+
+\vspace{8pt}
+\begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=6mm, right=6mm, top=4mm, bottom=4mm]
+  {\small\bfseries\color{asohSecondaryDark}Estados semánticos}\hspace{5pt}
+  {\small\color{asohTextSecondary}Éxito y advertencia aún no tienen colores aprobados. No improvisar verdes o amarillos hasta definir y validar esos tokens.}
+\end{tcolorbox}
+
+\newpage
+
+% =============================================================================
+% PAGE 5 - APPLICATION AND HANDOFF
+% =============================================================================
+{\fontsize{24}{27}\selectfont\bfseries\color{asohSecondaryDark}Aplicación y entrega}\par
+\vspace{4pt}
+{\small\color{asohTextSecondary}Estas reglas convierten la paleta en un sistema repetible para diseño y desarrollo.}\par
+\vspace{7pt}{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{10pt}
+
+\sectiontitle{Ejemplo de interfaz}{Una acción principal, una jerarquía clara}
+
+\begin{tcolorbox}[colback=asohCanvas, colframe=asohBorderWarm, boxrule=0.55pt,
+  sharp corners, left=7mm, right=7mm, top=7mm, bottom=7mm]
+  \begin{minipage}[c]{0.54\linewidth}
+    {\fontsize{23}{26}\selectfont\bfseries\color{asohSecondaryDark}
+      Vivir con hemofilia no significa vivir con \textcolor{asohPrimary}{límites.}\par}
+    \vspace{5pt}
+    {\small\color{asohTextSecondary}
+      Una comunidad que acompaña, orienta y conecta a personas con hemofilia y a sus familias.\par}
+    \vspace{7pt}
+    \tikz[baseline=-3pt]{\node[fill=asohPrimary, text=white, inner xsep=12pt,
+      inner ysep=7pt, font=\small\bfseries] {Soy paciente};}
+    \hspace{5pt}
+    \tikz[baseline=-3pt]{\node[draw=asohPrimary, line width=0.7pt, text=asohPrimary,
+      fill=asohSurface, inner xsep=12pt, inner ysep=7pt, font=\small\bfseries] {Conoce ASOHER};}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.39\linewidth}
+    \begin{tcolorbox}[colback=asohSurface, colframe=asohSecondaryDark, boxrule=0.7pt,
+      sharp corners, left=2mm, right=2mm, top=2mm, bottom=2mm]
+      \begin{tcolorbox}[colback=asohRedSoft, colframe=asohRedSoft, boxrule=0pt,
+        sharp corners, height=38mm, valign=center, halign=center]
+        {\small\bfseries\color{asohSecondaryDark}FOTO HERO}\par
+        {\scriptsize\color{asohTextSecondary}ImagePlaceholder / 16:10}
+      \end{tcolorbox}
+    \end{tcolorbox}
+  \end{minipage}
+\end{tcolorbox}
+
+\sectiontitle{Buenas prácticas}{Decisiones simples y consistentes}
+
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohBlueSoft, colframe=asohBlueSoft, boxrule=0pt,
+    sharp corners, left=6mm, right=6mm, top=5mm, bottom=5mm]
+    {\yesmark\hspace{4pt}\small\bfseries\color{asohSecondaryDark}Hacer}\par
+    \begin{itemize}[leftmargin=5mm, itemsep=3pt, topsep=4pt]
+      \item[\color{asohSecondary}$\bullet$] \small Usar contraste claro entre fondo y superficie.
+      \item[\color{asohSecondary}$\bullet$] \small Reservar rojo para la acción prioritaria.
+      \item[\color{asohSecondary}$\bullet$] \small Usar azul para estructura y orientación.
+      \item[\color{asohSecondary}$\bullet$] \small Repetir roles de color entre componentes.
+    \end{itemize}
+  \end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+  \begin{tcolorbox}[colback=asohRedSoft, colframe=asohRedSoft, boxrule=0pt,
+    sharp corners, left=6mm, right=6mm, top=5mm, bottom=5mm]
+    {\nomark\hspace{4pt}\small\bfseries\color{asohPrimaryDark}Evitar}\par
+    \begin{itemize}[leftmargin=5mm, itemsep=3pt, topsep=4pt]
+      \item[\color{asohPrimary}$\bullet$] \small Usar el mismo tono en fondo y contenido.
+      \item[\color{asohPrimary}$\bullet$] \small Convertir todos los elementos en acentos.
+      \item[\color{asohPrimary}$\bullet$] \small Introducir colores fuera del sistema.
+      \item[\color{asohPrimary}$\bullet$] \small Comunicar significado solo con color.
+    \end{itemize}
+  \end{tcolorbox}
+\end{minipage}
+
+\sectiontitle{Tokens de implementación}{Valores semánticos}
+
+\begin{tcolorbox}[colback=asohSecondaryDark, colframe=asohSecondaryDark, boxrule=0pt,
+  sharp corners, left=7mm, right=7mm, top=5mm, bottom=5mm]
+  {\ttfamily\scriptsize\color{white}
+  :root \{\par
+  \hspace*{5mm}--color-primary: \#b52e28;\quad --color-primary-dark: \#92231e;\par
+  \hspace*{5mm}--color-secondary: \#3968b3;\quad --color-secondary-dark: \#274a85;\par
+  \hspace*{5mm}--color-text: \#20242b;\quad --color-text-secondary: \#5b616b;\par
+  \hspace*{5mm}--color-background: \#fbf9f6;\quad --color-surface: \#ffffff;\par
+  \hspace*{5mm}--color-background-soft: \#f3f0ea;\quad --color-border: \#ddd8d0;\par
+  \hspace*{5mm}--color-red-soft: \#f8eceb;\quad --color-blue-soft: \#edf2fa;\par
+  \}}
+\end{tcolorbox}
+
+\vspace{8pt}
+\begin{tcolorbox}[colback=asohSurface, colframe=asohBorderWarm, boxrule=0.45pt,
+  sharp corners, left=6mm, right=6mm, top=4mm, bottom=4mm]
+  {\small\bfseries\color{asohSecondaryDark}Fuente de referencia}\par\vspace{2pt}
+  {\scriptsize\color{asohTextSecondary}
+  La estructura de esta guía toma como referencia los estándares de color digital de Penn Medicine: clasificación por función, neutrales, tonos claros, accesibilidad y buenas prácticas. La identidad, los valores y las reglas aquí definidas son propios de ASOHER.}
+\end{tcolorbox}
+
+\vfill
+{\color{asohBorderWarm}\hrule height 0.55pt}\vspace{5pt}
+{\footnotesize\color{asohInkWarm}
+Nota tipográfica: el sitio conserva Source Sans 3. Este documento usa Liberation Sans únicamente porque Source Sans 3 no está instalada en el entorno de compilación.}
+
+\end{document}

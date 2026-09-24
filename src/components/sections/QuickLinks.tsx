@@ -1,30 +1,39 @@
-import { ArrowUpRight, BookOpen, HeartHandshake, UsersRound } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
+import acompano from "@/assets/paths/acompano.webp";
+import diagnostico from "@/assets/paths/diagnostico.webp";
+import sumarme from "@/assets/paths/sumarme.webp";
 import { Container } from "@/components/layout/Container";
+import { Reveal } from "@/components/motion/Reveal";
 
-const links = [
+// Ilustraciones generadas con IA (prompts en docs/design/prompts-caminos.md). Son decorativas: el texto del enlace ya dice a dónde lleva.
+const paths = [
   {
-    label: "Necesito orientación",
-    description: "Orientación para empezar, resolver dudas y encontrar apoyo.",
+    label: "Me acaban de diagnosticar",
+    description: "Empieza por lo básico de la hemofilia. Si algo no queda claro, escríbenos y lo vemos juntos.",
+    cta: "Ver lo básico",
     href: "#hemofilia",
-    icon: HeartHandshake,
+    image: diagnostico,
     tone: "red",
     featured: true,
   },
   {
-    label: "Soy familiar",
-    description: "Recursos para acompañar con información y confianza.",
-    href: "#nosotros",
-    icon: UsersRound,
+    label: "Acompaño a alguien",
+    description: "Un hijo, tu pareja, un amigo. Otras familias ya pasaron por las mismas preguntas.",
+    cta: "Escuchar sus historias",
+    href: "#voces",
+    image: acompano,
     tone: "blue",
     featured: false,
   },
   {
-    label: "Quiero aprender",
-    description: "Una mirada clara a la hemofilia y la vida cotidiana.",
-    href: "#hemofilia",
-    icon: BookOpen,
+    label: "Quiero sumarme",
+    description: "Charlas, campañas y la voz de la comunidad ante las autoridades.",
+    cta: "Ver cómo participar",
+    href: "#voz",
+    image: sumarme,
     tone: "neutral",
     featured: false,
   },
@@ -34,36 +43,40 @@ export function QuickLinks() {
   return (
     <section id="recursos" className="quick-links-section" aria-labelledby="quick-links-title">
       <Container>
-        <div className="section-heading">
-          <h2 id="quick-links-title" className="section-title">
-            Encuentra lo que necesitas hoy.
-          </h2>
-          <p className="section-intro">
-            ASOHER reúne orientación, comunidad y recursos para que no tengas que buscar respuestas a solas.
-          </p>
-        </div>
+        <h2 id="quick-links-title" className="section-title">
+          ¿Por dónde quieres empezar?
+        </h2>
 
         <div className="quick-links-grid">
-          {links.map((link) => {
-            const Icon = link.icon;
-
-            return (
+          {paths.map((path, index) => (
+            <Reveal
+              key={path.label}
+              delay={index * 0.06}
+              className={path.featured ? "quick-link-slot quick-link-slot--featured" : "quick-link-slot"}
+            >
               <Link
-                key={link.label}
-                href={link.href}
-                className={`quick-link-card quick-link-card--${link.tone} ${link.featured ? "quick-link-card--featured" : ""}`}
+                href={path.href}
+                className={`quick-link-card quick-link-card--${path.tone} ${path.featured ? "quick-link-card--featured" : ""}`}
               >
-                <span className="quick-link-card__icon" aria-hidden="true">
-                  <Icon size={23} strokeWidth={1.7} />
+                <span className="quick-link-card__media">
+                  <Image
+                    src={path.image}
+                    alt=""
+                    placeholder="blur"
+                    sizes={path.featured ? "(min-width: 1024px) 60vw, 100vw" : "(min-width: 640px) 50vw, 100vw"}
+                  />
                 </span>
                 <span className="quick-link-card__content">
-                  <strong>{link.label}</strong>
-                  <span>{link.description}</span>
+                  <strong>{path.label}</strong>
+                  <span>{path.description}</span>
+                  <span className="quick-link-card__cta">
+                    {path.cta}
+                    <ArrowUpRight size={18} strokeWidth={1.8} aria-hidden="true" />
+                  </span>
                 </span>
-                <ArrowUpRight className="quick-link-card__arrow" size={20} strokeWidth={1.7} aria-hidden="true" />
               </Link>
-            );
-          })}
+            </Reveal>
+          ))}
         </div>
       </Container>
     </section>
