@@ -4,6 +4,7 @@ import { Activities } from "@/components/sections/Activities";
 import { Advocacy } from "@/components/sections/Advocacy";
 import { Community } from "@/components/sections/Community";
 import { Contact } from "@/components/sections/Contact";
+import { Emergency } from "@/components/sections/Emergency";
 import { Hero } from "@/components/sections/Hero";
 import { HemophiliaIntro } from "@/components/sections/HemophiliaIntro";
 import { QuickLinks } from "@/components/sections/QuickLinks";
@@ -27,6 +28,7 @@ export default function Home() {
         <HemophiliaIntro />
         <Activities />
         <Contact />
+        <Emergency />
       </main>
       <Footer />
     </div>

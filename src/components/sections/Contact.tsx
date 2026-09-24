@@ -1,4 +1,5 @@
-import { Mail, Siren } from "lucide-react";
+import { ArrowDown, Mail, Siren } from "lucide-react";
+import Link from "next/link";
 
 import { Container } from "@/components/layout/Container";
 import { contactEmail } from "@/data/navigation";
@@ -26,6 +27,15 @@ export function Contact() {
           <p>
             Si tienes un sangrado o un golpe que te preocupa, acude de inmediato a emergencias de tu hospital. No esperes nuestra respuesta.
           </p>
+          <div className="emergency-note__actions">
+            <a className="button button--primary" href="tel:106">
+              Llamar al 106
+            </a>
+            <Link className="text-link" href="#emergencias">
+              Ver números y hospitales
+              <ArrowDown size={18} strokeWidth={1.8} aria-hidden="true" />
+            </Link>
+          </div>
         </aside>
       </Container>
     </section>
